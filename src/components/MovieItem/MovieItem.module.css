@@ -1,0 +1,22 @@
+.poster {
+  display: block;
+  width: 280px;
+  height: 400px;
+
+  margin-bottom: 10px;
+
+  border-radius: 5px;
+  outline: none;
+  overflow: hidden;
+}
+
+.poster:hover,
+.poster:focus {
+  transform: scale(102%);
+}
+
+.movieTitle {
+  margin-bottom: 2px;
+  font-size: 20px;
+  color: black;
+}

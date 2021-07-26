@@ -1,0 +1,22 @@
+.poster {
+  border-radius: 5px;
+  width: 280px;
+
+  object-fit: cover;
+}
+
+.subTitle {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 1.172;
+  font-weight: 800;
+}
+
+.overview {
+  margin-bottom: 20px;
+
+  font-size: 18px;
+  line-height: 1.172;
+  font-weight: 500;
+}

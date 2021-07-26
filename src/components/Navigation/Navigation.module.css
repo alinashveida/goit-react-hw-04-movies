@@ -1,0 +1,8 @@
+.link {
+  margin-right: 10px;
+  color: black;
+}
+
+.activeLink {
+  color: blue;
+}
