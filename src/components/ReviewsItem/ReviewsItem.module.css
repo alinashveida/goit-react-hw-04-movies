@@ -1,0 +1,19 @@
+.title {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 1.572;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.172;
+  font-weight: 500;
+
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  color: black;
+}

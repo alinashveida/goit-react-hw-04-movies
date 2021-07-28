@@ -1,0 +1,21 @@
+.imgActor {
+  display: block;
+  width: 200px;
+  height: 300px;
+
+  margin-bottom: 10px;
+
+  border-radius: 10px;
+  outline: none;
+  object-fit: cover;
+}
+
+.actorName {
+  margin-bottom: 15px;
+}
+
+.actorCharacter {
+  font-style: italic;
+  font-size: 17px;
+  margin-bottom: 15px;
+}

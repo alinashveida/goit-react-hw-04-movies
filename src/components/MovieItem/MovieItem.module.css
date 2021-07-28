@@ -8,6 +8,7 @@
   border-radius: 5px;
   outline: none;
   overflow: hidden;
+  object-fit: cover;
 }
 
 .poster:hover,

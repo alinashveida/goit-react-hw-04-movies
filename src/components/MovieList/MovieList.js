@@ -5,7 +5,7 @@ export default function MovieList({ movies }) {
   return (
     <ul className={styled.movieList}>
       {movies.map((movie) => (
-        <MovieItem movie={movie} />
+        <MovieItem key={movie.id} movie={movie} />
       ))}
     </ul>
   );
