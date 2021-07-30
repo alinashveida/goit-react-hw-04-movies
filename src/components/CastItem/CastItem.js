@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 export default function CastItem({ actor }) {
   return (
-    <li key={actor.id}>
+    <li>
       <img
         className={styled.imgActor}
         src={

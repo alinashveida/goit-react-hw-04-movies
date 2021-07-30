@@ -2,7 +2,7 @@ import { lazy, Suspense } from "react";
 import PageHeading from "../PageHeading/PageHeading";
 import { NavLink } from "react-router-dom";
 import styled from "./MovieDetails.module.css";
-import { useRouteMatch } from "react-router-dom";
+import { useRouteMatch, useLocation } from "react-router-dom";
 import { Route, useHistory } from "react-router-dom";
 import Spinner from "../Spinner/Spinner";
 import noAvatar from "../../images/default.jpg";
@@ -10,10 +10,10 @@ import noAvatar from "../../images/default.jpg";
 import PropTypes from "prop-types";
 
 const CastView = lazy(() =>
-  import("../../views/CastView" /*webpackChunkName: *cast-view* */)
+  import("../../views/CastView" /*webpackChunkName: "cast-view" */)
 );
 const ReviewsView = lazy(() =>
-  import("../../views/ReviewsView" /*webpackChunkName: *reviews-view* */)
+  import("../../views/ReviewsView" /*webpackChunkName: "reviews-view" */)
 );
 
 export default function MovieDetails({
@@ -28,9 +28,13 @@ export default function MovieDetails({
 }) {
   const history = useHistory();
   const { url } = useRouteMatch();
+  const location = useLocation();
+
+  console.log(location);
 
   const goBack = () => {
-    history.goBack();
+    history.push(location?.state?.from ?? "/");
+    // history.goBack()
   };
 
   return (

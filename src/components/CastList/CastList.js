@@ -5,7 +5,7 @@ export default function CastList({ cast }) {
   return (
     <ul className={styled.castList}>
       {cast.map((actor) => (
-        <CastItem actor={actor} />
+        <CastItem key={actor.id} actor={actor} />
       ))}
     </ul>
   );

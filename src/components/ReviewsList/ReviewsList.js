@@ -4,7 +4,7 @@ export default function ReviewsList({ reviews }) {
   return (
     <ul>
       {reviews.map((review) => (
-        <ReviewsItem review={review} />
+        <ReviewsItem key={review.id} review={review} />
       ))}
     </ul>
   );
